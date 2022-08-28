@@ -148,7 +148,7 @@ const userInput = async function() {
             const scoreBord = document.querySelector(".quetionsForm");
             scoreBord.classList.add("result");
             const totalScore = document.createElement("h2");
-            if (scoure > 5) {
+            if (scoure >= 5) {
                 totalScore.innerHTML = `Yor Score is <span class="green"> ${scoure} </span>  out of <span class="green"> 10 </span>`;
             } else {
                 totalScore.innerHTML = `Yor Score is <span class="red"> ${scoure} </span>  out of <span class="green"> 10 </span>`;
