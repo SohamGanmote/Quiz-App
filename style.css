@@ -1,0 +1,115 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #89CFFD;
+}
+
+.centerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inputForm,
+.quetionsForm {
+    width: 500px;
+    background-color: white;
+    padding: 20px 0px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.inputForm h1 {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.inputForm h2 {
+    margin: 20px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.inputForm select {
+    margin: 2px 20px;
+    width: 90%;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.inputForm button,
+.nextQue,
+.tryAgain button {
+    background-color: #7FB77E;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.quetionsForm {
+    text-align: left;
+    padding: 5px 20px;
+    margin: 30px;
+    width: 700px;
+    margin: 20px auto;
+}
+
+.opetions {
+    background-color: #d8faf7;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border: none;
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+
+.nextQue {
+    float: right;
+    margin: 5px 10px;
+}
+
+.correct {
+    background-color: #93b993;
+}
+
+.inncorrect {
+    background-color: #ffa3a3;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.quetionsForm h2 {
+    text-align: center;
+}
+
+.tryAgain {
+    text-align: center;
+}
+
+.result {
+    width: 400px;
+    padding: 15px;
+}
+
+.display {
+    display: none;
+}
