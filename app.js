@@ -2,6 +2,11 @@ const submitBtn = document.querySelector(".submitBtn");
 
 const quetionForm = document.querySelector(".quetionsForm");
 
+const isLodding = function() {
+    const img = document.querySelector(".lodding");
+    img.classList.toggle("display")
+}
+
 const Category = document.querySelector("#Category");
 const Defficulty = document.querySelector("#Defficulty");
 
@@ -27,6 +32,8 @@ const req = async function() {
     // console.log(request.data.results[0].question);
     // console.log(request.data.results[0].correct_answer);
     // console.log(request.data.results[0].incorrect_answers);
+
+    isLodding();
 
     const quetion = document.createElement("h1");
     quetion.innerHTML = request.data.results[0].question;
@@ -124,6 +131,9 @@ const userInput = async function() {
 
     const nextBtn = document.querySelector(".nextQue")
     nextBtn.addEventListener("click", function next() {
+
+        isLodding();
+
         const h1s = document.querySelector(".quesion");
         h1s.remove();
         const p = document.querySelector(".opetions");
@@ -133,6 +143,7 @@ const userInput = async function() {
         if (NOQ < 10) {
             req();
         } else {
+            isLodding();
             console.log("Results : " + scoure);
             const scoreBord = document.querySelector(".quetionsForm");
             scoreBord.classList.add("result");
